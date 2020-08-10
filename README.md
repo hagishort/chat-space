@@ -47,7 +47,7 @@ Things you may want to cover:
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 |image|string|
-|text|string|null: false|
+|text|string|
 
 ### Association
 - belongs_to :group
