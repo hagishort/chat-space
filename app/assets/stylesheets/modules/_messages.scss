@@ -92,10 +92,8 @@
   &__right {
     display: block;
     border: 1px solid #38AEF0;
-    //color: #38AEF0;
     height: 40px;
     line-height: 40px;
-    //margin-top: 28px;
     padding: 0 20px;
   }
   &__btn {
@@ -129,8 +127,6 @@
   &__comment {
     color: #434A54;
     font-size: 14px;
-    // margin-top: 12px;
-    // margin-bottom: 46px;
     height: 50px;
     width: 100%;
     border: none;
@@ -173,5 +169,4 @@
     margin-left: 15px;
     padding: 0 30px;
   }
-
 }
