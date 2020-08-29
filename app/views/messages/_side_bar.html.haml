@@ -4,26 +4,26 @@
       .side-bar__name
         = current_user.name
       .side-bar__icon
-        = link_to "#" ,class: "side-bar__btn side-bar__btn--edit" do
+        = link_to new_group_path, class: "side-bar__btn side-bar__btn--edit" do
           = icon('fas', 'edit')
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog')
 
   .side-bar__group-list
-    .side-bar__group
-      .side-bar__groupname
-        techcamp
-      .side-bar__groupmessage
-        まだメッセージがありません
-
-    .side-bar__group
-      .side-bar__groupname
-        techcamp
-      .side-bar__groupmessage
-        まだメッセージがありません
-
-    .side-bar__group
-      .side-bar__groupname
-        techcamp
-      .side-bar__groupmessage
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .side-bar__group
+        = link_to '#' do
+          .side-bar__groupname
+            = group.name
+          .side-bar__groupmessage
+            メッセージはまだありません
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
