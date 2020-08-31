@@ -12,11 +12,11 @@
   .side-bar__group-list
     - current_user.groups.each do |group|
       .side-bar__group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .side-bar__groupname
             = group.name
           .side-bar__groupmessage
-            メッセージはまだありません
+            = group.show_last_message
     
     
     

@@ -109,6 +109,7 @@
   &__message-list {
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
+    overflow: scroll;
   }
   &__message-form {
     background-color: #d2d2d2;
